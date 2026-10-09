@@ -1,0 +1,14 @@
+{
+  "name": "MyPortfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Plain HTML/CSS/JS portfolio for a Data Engineer | AI/ML Engineer",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "7.3.2"
+  }
+}

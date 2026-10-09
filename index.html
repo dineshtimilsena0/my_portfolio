@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinesh Timilsena — Data Engineer | AI/ML Engineer</title>
+  <meta name="description" content="Dinesh Timilsena — Data Engineer and AI/ML Engineer building scalable data systems, machine learning solutions and AI-powered applications." />
+  <meta name="theme-color" content="#020617" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23061126'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='700' font-size='24' text-anchor='middle' fill='white'%3EDT%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- ============ SVG ICON SPRITE (reuse with <svg><use href="#i-name"/></svg>) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M6.6 7.4l3.8 3.4M6.6 16.6l3.8-3.4M13.6 10.8 17.4 7.4M13.6 13.2l3.8 3.4"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 5-7"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8z"/></symbol>
+      <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 6c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M2 12c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M2 18c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0"/></symbol>
+      <symbol id="i-warehouse" viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M7 21v-8h10v8M7 17h10"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/><path d="M6.5 17A2.5 2.5 0 0 0 4 19.5 2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 2h6M10 2v6L4 19a2 2 0 0 0 1.7 3h12.6a2 2 0 0 0 1.7-3L14 8V2"/><path d="M7 15h10"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background: grid, light, noise -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Dinesh Timilsena — back to top">
+        <span class="brand__mark">DT</span>
+        <span class="brand__text">
+          <span class="brand__name">Dinesh Timilsena</span>
+          <span class="brand__role">Data Engineer | AI/ML Engineer</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#stack" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#journey" class="nav__link">Journey</a>
+        <a href="#github" class="nav__link">GitHub</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--primary btn--sm nav__cta-mobile">Let's Connect <svg class="i"><use href="#i-arrow"/></svg></a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary btn--sm nav__cta" data-magnetic>Let's Connect <svg class="i"><use href="#i-arrow"/></svg></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="status-badge reveal"><span class="pulse-dot" aria-hidden="true"></span>  </p>
+
+          <h1 class="hero__title reveal" id="heroTitle">Namaste, I'm <span class="hero__name">Dinesh Timilsena</span></h1>
+          <p class="hero__roles reveal">
+            <span class="text-grad-cyan">Data Engineer</span>
+            <span class="hero__amp" aria-hidden="true">&amp;</span><span class="sr-only">and</span>
+            <span class="text-grad-violet">AI/ML Engineer</span>
+          </p>
+
+          <p class="hero__lead reveal">I build scalable data systems, intelligent machine learning solutions, and AI-powered applications that transform complex data into useful decisions.</p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary btn--lg" data-magnetic>Explore My Work <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a href="public/assets/resume/resu_me.pdf.html" class="btn btn--ghost btn--lg" data-link="resume">Download Resume <svg class="i"><use href="#i-download"/></svg></a>
+          </div>
+
+          <ul class="hero__tags reveal" aria-label="Core technologies">
+            <li class="tag">Python</li>
+            <li class="tag">SQL</li>
+            <li class="tag">Machine Learning</li>
+            <li class="tag">Deep Learning</li>
+            <li class="tag">Data Engineering</li>
+            <li class="tag">LLMs</li>
+            <li class="tag">MLOps</li>
+          </ul>
+        </div>
+
+        <!-- Profile visual -->
+        <div class="hero__visual reveal">
+          <p class="annotation" aria-hidden="true">My Picture
+            <svg viewBox="0 0 80 40" class="annotation__arrow"><path d="M4 8c18 2 40 4 62 22M56 30l11 1-3-11"/></svg>
+          </p>
+
+          <div class="portrait" data-tilt>
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__inner">
+              <!-- Mountain / tech environment -->
+              <svg class="portrait__scene" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0b1a3d"/><stop offset=".55" stop-color="#1c1450"/><stop offset="1" stop-color="#061126"/>
+                  </linearGradient>
+                  <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+                    <stop offset="0" stop-color="#f0abfc" stop-opacity=".9"/><stop offset=".45" stop-color="#8b5cf6" stop-opacity=".45"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2a8a"/><stop offset="1" stop-color="#0d1438"/></linearGradient>
+                  <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#081430"/></linearGradient>
+                  <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e2a4f"/><stop offset="1" stop-color="#040b1e"/></linearGradient>
+                </defs>
+                <rect width="400" height="500" fill="url(#sky)"/>
+                <g fill="#fff" class="stars">
+                  <circle cx="40" cy="40" r="1"/><circle cx="120" cy="80" r=".8"/><circle cx="320" cy="50" r="1.2"/><circle cx="260" cy="110" r=".7"/><circle cx="360" cy="150" r="1"/><circle cx="70" cy="140" r=".7"/><circle cx="190" cy="30" r=".9"/><circle cx="300" cy="200" r=".6"/>
+                </g>
+                <circle cx="200" cy="250" r="150" fill="url(#sun)"/>
+                <path d="M0 330 70 250 120 290 190 200 260 280 310 240 400 310V500H0Z" fill="url(#m1)" opacity=".9"/>
+                <path d="M190 200 205 222 195 218 182 232Z" fill="#c4b5fd" opacity=".55"/>
+                <path d="M0 370 60 320 130 360 210 300 290 355 350 320 400 345V500H0Z" fill="url(#m2)"/>
+                <path d="M0 410 90 370 170 400 250 365 330 405 400 385V500H0Z" fill="url(#m3)"/>
+                <g stroke="#22d3ee" stroke-opacity=".22" stroke-width="1">
+                  <path d="M0 440H400M0 465H400M0 492H400"/>
+                  <path d="M200 420 40 500M200 420 120 500M200 420 200 500M200 420 280 500M200 420 360 500"/>
+                </g>
+              </svg>
+
+              <!-- [PROFILE IMAGE] uploaded photo -->
+              <div class="portrait__photo">
+                <img class="portrait__img" src="public/assets/images/WhatsApp Image 2026-09-29 at 11.59.32 AM.jpeg" alt="Portrait of Dinesh Timilsena" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Floating technology labels -->
+            <span class="float-tag float-tag--1" style="--accent:var(--cyan)">Python</span>
+            <span class="float-tag float-tag--2" style="--accent:var(--red)">AI/ML</span>
+            <span class="float-tag float-tag--3" style="--accent:var(--violet)">PyTorch</span>
+            <span class="float-tag float-tag--4" style="--accent:var(--blue)">Spark</span>
+            <span class="float-tag float-tag--5" style="--accent:var(--magenta)">LLMs</span>
+
+            <div class="portrait__status">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Data  &amp; AI</span>
+            </div>
+
+            <span class="particle particle--1" aria-hidden="true"></span>
+            <span class="particle particle--2" aria-hidden="true"></span>
+            <span class="particle particle--3" aria-hidden="true"></span>
+            <span class="particle particle--4" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature data flow: DATA → PIPELINE → MODEL → INSIGHT -->
+      <div class="container">
+        <div class="flowline reveal" aria-label="Data flows through pipeline and model to insight">
+          <svg class="flowline__svg" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="flowGrad" x1="0" x2="1">
+                <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/>
+              </linearGradient>
+            </defs>
+            <path class="flowline__base" d="M20 30 C 180 5, 300 55, 500 30 S 820 5, 980 30"/>
+            <path class="flowline__pulse" d="M20 30 C 180 5, 300 55, 500 30 S 820 5, 980 30"/>
+            <path class="flowline__pulse flowline__pulse--b" d="M20 30 C 180 5, 300 55, 500 30 S 820 5, 980 30"/>
+          </svg>
+          <ol class="flowline__nodes">
+            <li style="--accent:var(--cyan)"><span class="flowline__dot"></span>Data</li>
+            <li style="--accent:var(--blue)"><span class="flowline__dot"></span>Pipeline</li>
+            <li style="--accent:var(--violet)"><span class="flowline__dot"></span>Model</li>
+            <li style="--accent:var(--magenta)"><span class="flowline__dot"></span>Insight</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- ==============================  VIDEO ============================== -->
+    <section class="section" id="video" aria-labelledby="videoTitle">
+      <div class="container">
+        <header class="sec-head sec-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Introduction</p>
+          <h2 class="sec-title" id="videoTitle">Watch My <span class="text-grad">Introduction</span></h2>
+          <p class="sec-sub">Get to know me, my journey and what I build.</p>
+        </header>
+
+        <div class="video reveal" id="videoFrame">
+          <!-- Intro video: public/assets/video/intro.mp4 (1280x720, 8s). Change CONFIG.introVideo in js/script.js -->
+          <img class="video__poster" src="public/assets/images/video-thumbnail.jpg" alt="Data Engineering and AI/ML visualization" loading="lazy" />
+          <div class="video__shade" aria-hidden="true"></div>
+          <button class="video__play" id="videoPlay" aria-label="Play introduction video (8 seconds)">
+            <span class="video__play-ring" aria-hidden="true"></span>
+            <svg class="i"><use href="#i-play"/></svg>
+          </button>
+          <div class="video__meta">
+            <span class="video__chip"><svg class="i"><use href="#i-clock"/></svg>8 sec</span>
+            <span class="video__caption">Dinesh Timilsena — Data Engineer &amp; AI/ML Engineer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==============================  ABOUT ============================== -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="about">
+          <header class="sec-head reveal">
+            <p class="eyebrow"><span class="eyebrow__num"></span>Who I Am</p>
+            <h2 class="sec-title" id="aboutTitle">Engineering Data.<br /><span class="text-grad">Building Intelligence.</span></h2>
+            <p class="sec-sub">I work across the full lifecycle of data  from ingesting raw sources and designing reliable pipelines, to training models and shipping AI features that people actually use. I care about systems that are simple, observable and built to scale.</p>
+            <p class="sec-sub sec-sub--ph"><span class="ph"> </span></p>
+          </header>
+
+          <div class="explore glass reveal">
+            <p class="explore__title"><span class="pulse-dot pulse-dot--violet" aria-hidden="true"></span>Currently Exploring</p>
+            <ul class="explore__list">
+              <li>LLM Engineering</li>
+              <li>MLOps</li>
+              <li>Distributed Systems</li>
+              <li>Cloud Architecture</li>
+              <li>Generative AI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar glass reveal" style="--accent:var(--cyan)" data-tilt>
+            <span class="pillar__icon"><svg class="i"><use href="#i-database"/></svg></span>
+            <span class="pillar__kicker">Data</span>
+            <h3>Data Engineering</h3>
+            <p>Building reliable pipelines, ETL/ELT systems, data warehouses and scalable data infrastructure.</p>
+          </article>
+          <article class="pillar glass reveal" style="--accent:var(--violet)" data-tilt>
+            <span class="pillar__icon"><svg class="i"><use href="#i-network"/></svg></span>
+            <span class="pillar__kicker">Intelligence</span>
+            <h3>AI / Machine Learning</h3>
+            <p>Building predictive models, deep-learning systems and intelligent applications.</p>
+          </article>
+          <article class="pillar glass reveal" style="--accent:var(--magenta)" data-tilt>
+            <span class="pillar__icon"><svg class="i"><use href="#i-sparkles"/></svg></span>
+            <span class="pillar__kicker">Impact</span>
+            <h3>AI Systems</h3>
+            <p>Working with LLMs, RAG, embeddings, vector databases and AI-powered workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 02 TECH STACK ============================== -->
+    <section class="section" id="stack" aria-labelledby="stackTitle">
+      <div class="container">
+        <header class="sec-head sec-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Technology Ecosystem</p>
+          <h2 class="sec-title" id="stackTitle">One ecosystem, <span class="text-grad">six domains.</span></h2>
+          <p class="sec-sub">Every tool I use connects back to a purpose. Hover a domain — or filter — to see how it fits.</p>
+        </header>
+
+        <div class="stack-filter reveal" role="group" aria-label="Filter technology domains">
+          <button class="chip-btn is-active" data-filter="all">All</button>
+          <button class="chip-btn" data-filter="prog" style="--accent:var(--sky)">Programming</button>
+          <button class="chip-btn" data-filter="data" style="--accent:var(--cyan)">Data Eng.</button>
+          <button class="chip-btn" data-filter="viz" style="--accent:var(--teal)">Visualization</button>
+          <button class="chip-btn" data-filter="ml" style="--accent:var(--violet)">Machine Learning</button>
+          <button class="chip-btn" data-filter="ai" style="--accent:var(--magenta)">AI / LLM</button>
+          <button class="chip-btn" data-filter="ops" style="--accent:var(--indigo)">MLOps</button>
+        </div>
+
+        <div class="constellation reveal" id="constellation">
+          <svg class="constellation__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <line data-domain="prog" x1="50" y1="50" x2="22" y2="16" style="--accent:var(--sky)"/>
+            <line data-domain="data" x1="50" y1="50" x2="22" y2="50" style="--accent:var(--cyan)"/>
+            <line data-domain="viz"  x1="50" y1="50" x2="22" y2="84" style="--accent:var(--teal)"/>
+            <line data-domain="ml"   x1="50" y1="50" x2="78" y2="16" style="--accent:var(--violet)"/>
+            <line data-domain="ai"   x1="50" y1="50" x2="78" y2="50" style="--accent:var(--magenta)"/>
+            <line data-domain="ops"  x1="50" y1="50" x2="78" y2="84" style="--accent:var(--indigo)"/>
+          </svg>
+
+          <div class="domain domain--prog glass" data-domain="prog" style="--accent:var(--sky)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-code"/></svg>Programming</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="Pipelines, ML & APIs">Python</li>
+              <li class="tech" data-tip="Querying & modeling">SQL</li>
+              <li class="tech" data-tip="Web & dashboards">JavaScript</li>
+            </ul>
+          </div>
+          <div class="domain domain--data glass" data-domain="data" style="--accent:var(--cyan)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-database"/></svg>Data Engineering</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="Dataframes">Pandas</li>
+              <li class="tech" data-tip="Numerical computing">NumPy</li>
+              <li class="tech" data-tip="Data pipelines">Apache Kafka</li>
+              <li class="tech" data-tip="Workflow orchestration">Apache Airflow</li>
+              <li class="tech" data-tip="Distributed processing">Apache Spark</li>
+              <li class="tech" data-tip="Relational database">PostgreSQL</li>
+              <li class="tech" data-tip="Extract · Transform · Load">ETL / ELT</li>
+            </ul>
+          </div>
+          <div class="domain domain--viz glass" data-domain="viz" style="--accent:var(--teal)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-chart"/></svg>Data Visualization</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="BI dashboards">Power BI</li>
+              <li class="tech" data-tip="Visual analytics">Tableau</li>
+              <li class="tech" data-tip="Interactive charts">Plotly</li>
+              <li class="tech" data-tip="Scientific plotting">Matplotlib</li>
+            </ul>
+          </div>
+
+          <div class="core" aria-live="polite">
+            <div class="core__orb">
+              <span class="core__ring core__ring--1"></span>
+              <span class="core__ring core__ring--2"></span>
+              <span class="core__mark">DT</span>
+            </div>
+            <p class="core__label" id="coreLabel">Full Stack of Data &amp; AI</p>
+            <p class="core__meta" id="coreMeta"><span data-tech-count>27</span> technologies · 6 domains</p>
+          </div>
+
+          <div class="domain domain--ml glass" data-domain="ml" style="--accent:var(--violet)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-network"/></svg>Machine Learning</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="Classical ML">Scikit-learn</li>
+              <li class="tech" data-tip="Gradient boosting">XGBoost</li>
+              <li class="tech" data-tip="Deep learning">PyTorch</li>
+              <li class="tech" data-tip="Deep learning">TensorFlow</li>
+            </ul>
+          </div>
+          <div class="domain domain--ai glass" data-domain="ai" style="--accent:var(--magenta)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-sparkles"/></svg>AI / LLM</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="Large language models">LLMs</li>
+              <li class="tech" data-tip="Retrieval-augmented generation">RAG</li>
+              <li class="tech" data-tip="Semantic vectors">Embeddings</li>
+              <li class="tech" data-tip="Similarity search">Vector Databases</li>
+              <li class="tech" data-tip="LLM orchestration">LangChain</li>
+            </ul>
+          </div>
+          <div class="domain domain--ops glass" data-domain="ops" style="--accent:var(--indigo)" tabindex="0">
+            <h3 class="domain__title"><svg class="i"><use href="#i-rocket"/></svg>DevOps / MLOps</h3>
+            <ul class="domain__techs">
+              <li class="tech" data-tip="Containers">Docker</li>
+              <li class="tech" data-tip="Version control">Git</li>
+              <li class="tech" data-tip="Collaboration">GitHub</li>
+              <li class="tech" data-tip="Automated delivery">CI/CD</li>
+              <li class="tech" data-tip="Experiment tracking">MLflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 03 AI / LLM VISUALIZATION ============================== -->
+    <section class="section" id="ai" aria-labelledby="aiTitle">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>How AI Thinks</p>
+          <h2 class="sec-title" id="aiTitle">From a question to an answer <br /><span class="text-grad-warm">inside a language model.</span></h2>
+          <p class="sec-sub">Type a question and watch it travel through the stages of an LLM: tokens, embeddings, vector space, attention and prediction.</p>
+        </header>
+
+        <div class="llm glass reveal">
+          <div class="llm__progress" aria-hidden="true"><span id="llmProgress"></span></div>
+
+          <div class="llm__top">
+            <form class="llm__form" id="llmForm" autocomplete="off">
+              <label for="llmInput" class="sr-only">Ask the model a question</label>
+              <span class="llm__caret" aria-hidden="true">›_</span>
+              <input id="llmInput" type="text" maxlength="80" value="What is machine learning?" />
+              <button type="submit" class="btn btn--primary btn--sm">Run model <svg class="i"><use href="#i-play"/></svg></button>
+            </form>
+            <div class="llm__presets" role="group" aria-label="Example questions">
+              <button class="chip-btn chip-btn--sm" data-q="What is machine learning?">What is machine learning?</button>
+              <button class="chip-btn chip-btn--sm" data-q="How does RAG work?">How does RAG work?</button>
+              <button class="chip-btn chip-btn--sm" data-q="Explain a data pipeline">Explain a data pipeline</button>
+            </div>
+          </div>
+
+          <p class="llm__status" aria-live="polite"><span class="pulse-dot" aria-hidden="true"></span><span id="llmStatus">Ready — press “Run model”</span></p>
+
+          <ol class="llm__flow">
+            <li class="stage" data-stage="0">
+              <div class="stage__head"><span class="stage__n">01</span><h3>User Question</h3></div>
+              <div class="stage__body" id="stQuestion"></div>
+              <p class="stage__note">Raw text enters the system.</p>
+            </li>
+            <li class="stage" data-stage="1">
+              <div class="stage__head"><span class="stage__n">02</span><h3>Tokens</h3></div>
+              <div class="stage__body" id="stTokens"></div>
+              <p class="stage__note">Text is split into tokens.</p>
+            </li>
+            <li class="stage" data-stage="2">
+              <div class="stage__head"><span class="stage__n">03</span><h3>Embeddings</h3></div>
+              <div class="stage__body" id="stEmbed"></div>
+              <p class="stage__note">Each token becomes a vector of numbers.</p>
+            </li>
+            <li class="stage" data-stage="3">
+              <div class="stage__head"><span class="stage__n">04</span><h3>Vector Space</h3></div>
+              <div class="stage__body" id="stSpace"></div>
+              <p class="stage__note">Similar meanings sit close together.</p>
+            </li>
+            <li class="stage" data-stage="4">
+              <div class="stage__head"><span class="stage__n">05</span><h3>Transformer</h3></div>
+              <div class="stage__body" id="stAttn"></div>
+              <p class="stage__note">Self-attention weighs token relationships.</p>
+            </li>
+            <li class="stage" data-stage="5">
+              <div class="stage__head"><span class="stage__n">06</span><h3>Prediction</h3></div>
+              <div class="stage__body" id="stPred"></div>
+              <p class="stage__note">Probabilities for the next token.</p>
+            </li>
+            <li class="stage stage--wide" data-stage="6">
+              <div class="stage__head"><span class="stage__n">07</span><h3>AI Response</h3></div>
+              <div class="stage__body" id="stResp"></div>
+              <p class="stage__note">Tokens are generated one at a time.</p>
+            </li>
+          </ol>
+
+          <p class="llm__disclaimer">Simplified, simulated visualization for learning purposes — numbers are illustrative and not produced by a real model.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04 DATA PIPELINE ============================== -->
+    <section class="section" id="pipeline" aria-labelledby="pipeTitleH">
+      <div class="container">
+        <header class="sec-head sec-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Data Engineering</p>
+          <h2 class="sec-title" id="pipeTitleH">How I Build <span class="text-grad">Data Systems</span></h2>
+          <p class="sec-sub">From raw sources to business decisions  every stage designed to be reliable, observable and reproducible.</p>
+        </header>
+
+        <div class="pipe glass reveal">
+          <div class="pipe__track">
+            <div class="pipe__line" aria-hidden="true"><span></span></div>
+            <ol class="pipe__nodes" id="pipeNodes">
+              <li><button class="pipe-node" data-i="0" style="--accent:var(--cyan)"><span class="pipe-node__icon"><svg class="i"><use href="#i-plug"/></svg></span><span class="pipe-node__label">Data Sources</span><span class="pipe-node__tool">APIs · DBs</span></button></li>
+              <li><button class="pipe-node" data-i="1" style="--accent:var(--cyan)"><span class="pipe-node__icon"><svg class="i"><use href="#i-download"/></svg></span><span class="pipe-node__label">Ingestion</span><span class="pipe-node__tool">Python · Airflow</span></button></li>
+              <li><button class="pipe-node" data-i="2" style="--accent:var(--sky)"><span class="pipe-node__icon"><svg class="i"><use href="#i-filter"/></svg></span><span class="pipe-node__label">ETL / ELT</span><span class="pipe-node__tool">Spark · SQL</span></button></li>
+              <li><button class="pipe-node" data-i="3" style="--accent:var(--blue)"><span class="pipe-node__icon"><svg class="i"><use href="#i-waves"/></svg></span><span class="pipe-node__label">Data Lake</span><span class="pipe-node__tool">Parquet</span></button></li>
+              <li><button class="pipe-node" data-i="4" style="--accent:var(--indigo)"><span class="pipe-node__icon"><svg class="i"><use href="#i-warehouse"/></svg></span><span class="pipe-node__label">Warehouse</span><span class="pipe-node__tool">PostgreSQL</span></button></li>
+              <li><button class="pipe-node" data-i="5" style="--accent:var(--violet)"><span class="pipe-node__icon"><svg class="i"><use href="#i-chart"/></svg></span><span class="pipe-node__label">Analytics</span><span class="pipe-node__tool">SQL · BI</span></button></li>
+              <li><button class="pipe-node" data-i="6" style="--accent:var(--purple)"><span class="pipe-node__icon"><svg class="i"><use href="#i-network"/></svg></span><span class="pipe-node__label">Machine Learning</span><span class="pipe-node__tool">Scikit · PyTorch</span></button></li>
+              <li><button class="pipe-node" data-i="7" style="--accent:var(--magenta)"><span class="pipe-node__icon"><svg class="i"><use href="#i-bulb"/></svg></span><span class="pipe-node__label">Business Insights</span><span class="pipe-node__tool">Decisions</span></button></li>
+            </ol>
+          </div>
+
+          <div class="pipe__detail" aria-live="polite">
+            <div class="pipe__detail-main">
+              <p class="pipe__step" id="pipeStep">Stage 01 / 08</p>
+              <h3 id="pipeTitle">Data Sources</h3>
+              <p id="pipeDesc">Collect raw data from REST APIs, operational databases, event streams and flat files.</p>
+            </div>
+            <ul class="pipe__tools" id="pipeTools"></ul>
+          </div>
+
+          <div class="pipe__chain" aria-label="Example toolchain">
+            <span class="pipe__chain-label">Example stack</span>
+            <code>Python <i>→</i> Airflow <i>→</i> PostgreSQL <i>→</i> Spark <i>→</i> Warehouse <i>→</i> ML <i>→</i> Dashboard</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 05 PROJECTS ============================== -->
+    <section class="section" id="projects" aria-labelledby="projTitle">
+      <div class="container">
+        <header class="sec-head sec-head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__num"></span>Selected Work</p>
+            <h2 class="sec-title" id="projTitle">Featured <span class="text-grad">Projects</span></h2>
+          </div>
+          <p class="sec-sub">Real-world systems built with data, AI and engineering. Click any project for the full case study and architecture.</p>
+        </header>
+
+        <!-- Replace project content with your real projects. Detailed case-study data lives in js/script.js (PROJECTS). -->
+        <div class="projects">
+          <!-- 1. AI / LLM -->
+          <article class="project project--wide glass reveal" style="--accent:var(--violet); --accent-2:var(--magenta)" data-project="rag">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 320 180">
+                <g class="pv-float">
+                  <rect x="30" y="34" width="150" height="34" rx="12" fill="rgba(139,92,246,.18)" stroke="rgba(167,139,250,.5)"/>
+                  <rect x="44" y="47" width="92" height="6" rx="3" fill="#c4b5fd" opacity=".7"/>
+                  <rect x="130" y="86" width="160" height="50" rx="12" fill="rgba(236,72,153,.12)" stroke="rgba(244,114,182,.45)"/>
+                  <rect x="144" y="99" width="120" height="6" rx="3" fill="#f9a8d4" opacity=".7"/>
+                  <rect x="144" y="113" width="80" height="6" rx="3" fill="#f9a8d4" opacity=".45"/>
+                </g>
+                <g fill="#a78bfa">
+                  <circle cx="44" cy="120" r="4"/><circle cx="70" cy="140" r="3"/><circle cx="58" cy="100" r="2.5"/><circle cx="90" cy="118" r="3.5"/><circle cx="28" cy="150" r="2.5"/>
+                </g>
+                <path d="M44 120 70 140M44 120 90 118M58 100 90 118M90 118 130 110" stroke="#a78bfa" stroke-opacity=".5" fill="none"/>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">AI / LLM</p>
+              <h3 class="project__title">RAG Knowledge Assistant</h3>
+              <p class="project__desc">A retrieval-augmented assistant that answers questions over private documents with grounded, cited responses.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>Knowledge scattered across documents is slow to search.</dd></div>
+                <div><dt>Key feature</dt><dd>Answers grounded in sources with citations.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>Python</li><li>LangChain</li><li>Embeddings</li><li>Vector DB</li><li>FastAPI</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="rag">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]"><svg class="i"><use href="#i-external"/></svg>Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Data Engineering -->
+          <article class="project glass reveal" style="--accent:var(--cyan); --accent-2:var(--blue)" data-project="etl">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 320 180">
+                <g stroke="#22d3ee" stroke-opacity=".55" fill="rgba(34,211,238,.1)">
+                  <rect x="24" y="40" width="46" height="28" rx="7"/><rect x="24" y="80" width="46" height="28" rx="7"/><rect x="24" y="120" width="46" height="28" rx="7"/>
+                  <rect x="136" y="70" width="56" height="44" rx="10"/>
+                </g>
+                <path class="pv-dash" d="M70 54 C 100 54, 110 92, 136 92M70 94H136M70 134 C 100 134, 110 92, 136 92M192 92H244" stroke="#22d3ee" fill="none"/>
+                <g transform="translate(244 66)" fill="rgba(59,130,246,.15)" stroke="#60a5fa" stroke-opacity=".6">
+                  <ellipse cx="26" cy="8" rx="26" ry="8"/><path d="M0 8v36c0 4.4 11.6 8 26 8s26-3.6 26-8V8"/><path d="M0 26c0 4.4 11.6 8 26 8s26-3.6 26-8" fill="none"/>
+                </g>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Data Engineering</p>
+              <h3 class="project__title">End-to-End ETL Pipeline</h3>
+              <p class="project__desc">Orchestrated pipeline that ingests multi-source data, transforms it and loads a query-ready warehouse.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>Inconsistent raw data, prepared manually.</dd></div>
+                <div><dt>Key feature</dt><dd>Idempotent DAGs with data-quality checks.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>Airflow</li><li>Spark</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="etl">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github" aria-label="ETL Pipeline on GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]" aria-label="ETL Pipeline live demo"><svg class="i"><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. ML -->
+          <article class="project glass reveal" style="--accent:var(--blue); --accent-2:var(--cyan)" data-project="ml">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 320 180">
+                <g stroke="#60a5fa" stroke-opacity=".18"><path d="M30 150H300M30 115H300M30 80H300M30 45H300"/></g>
+                <g fill="#93c5fd" opacity=".55">
+                  <circle cx="50" cy="138" r="3"/><circle cx="78" cy="128" r="3"/><circle cx="96" cy="118" r="3"/><circle cx="122" cy="112" r="3"/><circle cx="150" cy="96" r="3"/><circle cx="176" cy="90" r="3"/><circle cx="204" cy="76" r="3"/><circle cx="232" cy="66" r="3"/><circle cx="258" cy="58" r="3"/><circle cx="284" cy="44" r="3"/>
+                </g>
+                <path class="pv-draw" d="M40 145 C 110 120, 180 92, 296 40" stroke="url(#mlg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <defs><linearGradient id="mlg" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Machine Learning</p>
+              <h3 class="project__title">Production Prediction System</h3>
+              <p class="project__desc">A trained, evaluated model served behind a validated REST API — built like a product, not a notebook.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>Decisions made without predictive signal.</dd></div>
+                <div><dt>Key feature</dt><dd>Versioned model served via API.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>Scikit-learn</li><li>XGBoost</li><li>FastAPI</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="ml">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github" aria-label="Prediction System on GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]" aria-label="Prediction System live demo"><svg class="i"><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Analytics -->
+          <article class="project glass reveal" style="--accent:var(--teal); --accent-2:var(--cyan)" data-project="bi">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 320 180">
+                <g class="pv-bars" fill="url(#big)">
+                  <rect x="44" y="100" width="26" height="50" rx="5"/><rect x="86" y="74" width="26" height="76" rx="5"/><rect x="128" y="90" width="26" height="60" rx="5"/><rect x="170" y="52" width="26" height="98" rx="5"/><rect x="212" y="66" width="26" height="84" rx="5"/><rect x="254" y="36" width="26" height="114" rx="5"/>
+                </g>
+                <defs><linearGradient id="big" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#2dd4bf" stop-opacity=".1"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Analytics</p>
+              <h3 class="project__title">Business Intelligence Dashboard</h3>
+              <p class="project__desc">Interactive KPI dashboard on a clean data model, built for fast, self-serve answers.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>No single view of key metrics.</dd></div>
+                <div><dt>Key feature</dt><dd>Drill-down KPIs and filters.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>SQL</li><li>Power BI</li><li>Plotly</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="bi">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github" aria-label="BI Dashboard on GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]" aria-label="BI Dashboard live demo"><svg class="i"><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. MLOps -->
+          <article class="project glass reveal" style="--accent:var(--magenta); --accent-2:var(--violet)" data-project="mlops">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 320 180">
+                <circle cx="160" cy="90" r="52" fill="none" stroke="#f472b6" stroke-opacity=".2" stroke-width="10"/>
+                <circle class="pv-spin" cx="160" cy="90" r="52" fill="none" stroke="url(#opg)" stroke-width="4" stroke-dasharray="80 247" stroke-linecap="round"/>
+                <g font-family="JetBrains Mono, monospace" font-size="10" fill="#fbcfe8" text-anchor="middle">
+                  <text x="160" y="30">build</text><text x="232" y="94">test</text><text x="160" y="160">deploy</text><text x="86" y="94">monitor</text>
+                </g>
+                <defs><linearGradient id="opg"><stop offset="0" stop-color="#ec4899"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">MLOps</p>
+              <h3 class="project__title">Automated ML Deployment</h3>
+              <p class="project__desc">CI/CD for models: every push is tested, trained, registered and shipped as a container.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>Manual model releases are error-prone.</dd></div>
+                <div><dt>Key feature</dt><dd>Reproducible train → deploy loop.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>MLflow</li><li>Docker</li><li>CI/CD</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="mlops">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github" aria-label="ML Deployment on GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]" aria-label="ML Deployment live demo"><svg class="i"><use href="#i-external"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. AI Data Platform (capstone) -->
+          <article class="project project--full glass reveal" style="--accent:var(--cyan); --accent-2:var(--magenta)" data-project="platform">
+            <div class="project__visual" aria-hidden="true">
+              <svg viewBox="0 0 520 180">
+                <defs><linearGradient id="plg" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+                <path d="M40 90H480" stroke="url(#plg)" stroke-opacity=".35" stroke-width="2"/>
+                <path class="pv-dash" d="M40 90H480" stroke="url(#plg)" stroke-width="2"/>
+                <g font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle" fill="#cbd5ff">
+                  <g><circle cx="60" cy="90" r="18" fill="#061126" stroke="#22d3ee"/><text x="60" y="130">ingest</text></g>
+                  <g><circle cx="160" cy="90" r="18" fill="#061126" stroke="#38bdf8"/><text x="160" y="130">process</text></g>
+                  <g><circle cx="260" cy="90" r="18" fill="#061126" stroke="#818cf8"/><text x="260" y="130">store</text></g>
+                  <g><circle cx="360" cy="90" r="18" fill="#061126" stroke="#a855f7"/><text x="360" y="130">model</text></g>
+                  <g><circle cx="460" cy="90" r="18" fill="#061126" stroke="#ec4899"/><text x="460" y="130">insight</text></g>
+                </g>
+              </svg>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">AI Data Platform · Capstone</p>
+              <h3 class="project__title">Unified AI Data Platform</h3>
+              <p class="project__desc">Ingestion, processing, machine learning and dashboards in one coherent system — the full Data → Intelligence → Impact loop.</p>
+              <dl class="project__meta">
+                <div><dt>Problem</dt><dd>Ingestion, ML and reporting live in silos.</dd></div>
+                <div><dt>Key feature</dt><dd>One flow from raw data to ML-driven insight.</dd></div>
+              </dl>
+              <ul class="project__stack"><li>Airflow</li><li>Spark</li><li>PostgreSQL</li><li>PyTorch</li><li>Plotly</li></ul>
+              <div class="project__actions">
+                <button class="btn btn--primary btn--sm" data-open="platform">Case study <svg class="i"><use href="#i-arrow"/></svg></button>
+                <a href="#" class="btn btn--ghost btn--sm" data-link="github"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+                <a href="#" class="btn btn--ghost btn--sm" data-placeholder="[LIVE DEMO URL]"><svg class="i"><use href="#i-external"/></svg>Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 06 JOURNEY ============================== -->
+    <section class="section" id="journey" aria-labelledby="journeyTitle">
+      <div class="container">
+        <header class="sec-head sec-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Experience &amp; Journey</p>
+          <h2 class="sec-title" id="journeyTitle">Learning <i class="arrow-sep">→</i> Building <i class="arrow-sep">→</i> <span class="text-grad">Growing</span></h2>
+          <p class="sec-sub">A path shaped by curiosity and shipped projects. Replace the bracketed fields with your own milestones.</p>
+        </header>
+
+        <ol class="timeline" id="timeline">
+          <li class="milestone reveal" style="--accent:var(--cyan)">
+            <span class="milestone__dot" aria-hidden="true"></span>
+            <div class="milestone__card glass">
+              <p class="milestone__year"><span class="ph">2025</span></p>
+              <h3><svg class="i"><use href="#i-book"/></svg>Learning</h3>
+              <p>Foundations in Python, SQL, statistics and data analysis.</p>
+              
+              <ul class="mini-tags"><li>Python</li><li>SQL</li><li>Statistics</li></ul>
+            </div>
+          </li>
+          <li class="milestone reveal" style="--accent:var(--sky)">
+            <span class="milestone__dot" aria-hidden="true"></span>
+            <div class="milestone__card glass">
+              <p class="milestone__year"><span class="ph">2026</span></p>
+              <h3><svg class="i"><use href="#i-code"/></svg>Building</h3>
+              <p>First end-to-end projects: data cleaning, dashboards and ML models.</p>
+              
+              <ul class="mini-tags"><li>Pandas</li><li>Scikit-learn</li><li>Power BI</li></ul>
+            </div>
+          </li>
+          <li class="milestone reveal" style="--accent:var(--violet)">
+            <span class="milestone__dot" aria-hidden="true"></span>
+            <div class="milestone__card glass">
+              <p class="milestone__year"><span class="ph">2026</span></p>
+              <h3><svg class="i"><use href="#i-flask"/></svg>Experimenting</h3>
+              <p>Deep learning, NLP and LLM experiments with embeddings and RAG.</p>
+              
+              <ul class="mini-tags"><li>PyTorch</li><li>LangChain</li><li>Vector DBs</li></ul>
+            </div>
+          </li>
+          <li class="milestone reveal" style="--accent:var(--purple)">
+            <span class="milestone__dot" aria-hidden="true"></span>
+            <div class="milestone__card glass">
+              <p class="milestone__year"><span class="ph">2026</span></p>
+              <h3><svg class="i"><use href="#i-rocket"/></svg>Deploying</h3>
+              <p>Containerized models and automated, scheduled data pipelines.</p>
+              
+              <ul class="mini-tags"><li>Docker</li><li>Airflow</li><li>MLflow</li></ul>
+            </div>
+          </li>
+          <li class="milestone milestone--now reveal" style="--accent:var(--magenta)">
+            <span class="milestone__dot" aria-hidden="true"></span>
+            <div class="milestone__card glass">
+              <p class="milestone__year">Now</p>
+              <h3><svg class="i"><use href="#i-trend"/></svg>Growing</h3>
+              <p>Scaling into distributed systems, cloud architecture and LLM engineering.</p>
+              <p class="milestone__ach"><span class="ph">Data Engineer & AIML Engineer</span></p>
+              <ul class="mini-tags"><li>Spark</li><li>Cloud</li><li>System Design</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== 07 EDUCATION ============================== -->
+    <section class="section section--tight" id="education" aria-labelledby="eduTitle">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Education &amp; Certifications</p>
+          <h2 class="sec-title" id="eduTitle">Foundations &amp; <span class="text-grad">credentials.</span></h2>
+        </header>
+
+        <div class="edu">
+          <article class="edu__main glass reveal" style="--accent:var(--cyan)">
+            <span class="edu__icon"><svg class="i"><use href="#i-grad"/></svg></span>
+            <div>
+              <p class="edu__period"><span class="ph">Nov-2025</span> — <span class="ph">2029</span></p>
+              <h3><span class="ph">Bsc.CSIT</span></h3>
+              <p class="edu__school"><span class="ph">Tribhuwan University</span></p>
+              <p class="edu__course">Relevant coursework: <span class="ph">DSA,DBMS,Operating system, Databases, Statistics & Probablity,
+                 AI/ML,Data Mining </span></p>
+            </div>
+          </article>
+
+          <ul class="certs">
+            <li class="cert glass reveal" style="--accent:var(--violet)">
+              <span class="cert__icon"><svg class="i"><use href="#i-award"/></svg></span>
+              <div><h3><span class="ph">AI/ML & Data Science</span></h3><p><span class="ph">Apna Collage[World Top Learning Platform]</span> · <span class="ph">2026</span></p></div>
+              <a href="#" class="cert__link" data-placeholder="[CREDENTIAL URL]" aria-label="View credential"><svg class="i"><use href="#i-external"/></svg></a>
+            </li>
+            <li class="cert glass reveal" style="--accent:var(--blue)">
+              <span class="cert__icon"><svg class="i"><use href="#i-award"/></svg></span>
+              <div><h3><span class="ph">Python Programming</span></h3><p><span class="ph">Freecodecamp</span> · <span class="ph">2025</span></p></div>
+              <a href="#" class="cert__link" data-placeholder="[CREDENTIAL URL]" aria-label="View credential"><svg class="i"><use href="#i-external"/></svg></a>
+            </li>
+            <li class="cert glass reveal" style="--accent:var(--magenta)">
+              <span class="cert__icon"><svg class="i"><use href="#i-award"/></svg></span>
+              <div><h3><span class="ph">Google cloud</span></h3><p><span class="ph">Google</span> · <span class="ph">2026</span></p></div>
+              <a href="#" class="cert__link" data-placeholder="[CREDENTIAL URL]" aria-label="View credential"><svg class="i"><use href="#i-external"/></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ============================== 09 SKILLS MATRIX ============================== -->
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <header class="sec-head sec-head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__num"></span>Skills Matrix</p>
+          <h2 class="sec-title" id="skillsTitle">Capabilities, <span class="text-grad">not percentages.</span></h2>
+          <p class="sec-sub">Grouped by what I can deliver. Depth is shown honestly as core, working or exploring.</p>
+          <ul class="legend" aria-label="Legend">
+            <li><span class="lvl lvl--3" aria-hidden="true"><i></i><i></i><i></i></span>Core</li>
+            <li><span class="lvl lvl--2" aria-hidden="true"><i></i><i></i><i></i></span>Working</li>
+            <li><span class="lvl lvl--1" aria-hidden="true"><i></i><i></i><i></i></span>Exploring</li>
+          </ul>
+        </header>
+
+        <!-- Adjust data-level (3 = core, 2 = working, 1 = exploring) to reflect your real depth -->
+        <div class="matrix">
+          <article class="mcol glass reveal" style="--accent:var(--cyan)">
+            <header class="mcol__head"><span class="mcol__ring"><svg class="i"><use href="#i-database"/></svg></span><h3>Data</h3></header>
+            <ul class="skills">
+              <li data-level="3">SQL &amp; Data Modeling</li>
+              <li data-level="3">ETL / ELT Design</li>
+              <li data-level="2">Data Quality &amp; Testing</li>
+              <li data-level="2">Batch Processing</li>
+              <li data-level="1">Streaming</li>
+            </ul>
+          </article>
+          <article class="mcol glass reveal" style="--accent:var(--violet)">
+            <header class="mcol__head"><span class="mcol__ring"><svg class="i"><use href="#i-network"/></svg></span><h3>AI</h3></header>
+            <ul class="skills">
+              <li data-level="3">Supervised Learning</li>
+              <li data-level="2">Deep Learning</li>
+              <li data-level="2">NLP &amp; LLMs</li>
+              <li data-level="2">RAG Systems</li>
+              <li data-level="3">Model Evaluation</li>
+            </ul>
+          </article>
+          <article class="mcol glass reveal" style="--accent:var(--blue)">
+            <header class="mcol__head"><span class="mcol__ring"><svg class="i"><use href="#i-cpu"/></svg></span><h3>Engineering</h3></header>
+            <ul class="skills">
+              <li data-level="3">Python Software Design</li>
+              <li data-level="2">REST APIs</li>
+              <li data-level="2">Testing &amp; Debugging</li>
+              <li data-level="3">Version Control</li>
+              <li data-level="1">System Design</li>
+            </ul>
+          </article>
+          <article class="mcol glass reveal" style="--accent:var(--teal)">
+            <header class="mcol__head"><span class="mcol__ring"><svg class="i"><use href="#i-cloud"/></svg></span><h3>Cloud</h3></header>
+            <ul class="skills">
+              <li data-level="2">Containerization</li>
+              <li data-level="1">AWS</li>
+              <li data-level="1">Cloud Storage &amp; Compute</li>
+              <li data-level="1">Serverless</li>
+              <li data-level="1">Infrastructure as Code</li>
+            </ul>
+          </article>
+          <article class="mcol glass reveal" style="--accent:var(--magenta)">
+            <header class="mcol__head"><span class="mcol__ring"><svg class="i"><use href="#i-layers"/></svg></span><h3>Tools</h3></header>
+            <ul class="skills">
+              <li data-level="3">Jupyter</li>
+              <li data-level="2">Airflow</li>
+              <li data-level="2">Docker</li>
+              <li data-level="2">MLflow</li>
+              <li data-level="3">Power BI</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 12 CONTACT ============================== -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact glass reveal">
+          <div class="contact__copy">
+            <p class="eyebrow"><span class="eyebrow__num"></span>Contact</p>
+            <h2 class="sec-title" id="contactTitle">Let's Build Something <span class="text-grad-warm">Intelligent.</span></h2>
+            <p class="sec-sub">Have an idea, project, opportunity or collaboration in mind?</p>
+            <div class="contact__links">
+              <a href="mailto:dineshtimilsena53@gmail.com" class="btn btn--primary" data-link="email" data-magnetic><svg class="i"><use href="#i-mail"/></svg>Email Me</a>
+              <a href="https://github.com/dineshtimilsena0" class="btn btn--ghost" data-link="github"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+              <a href="https://www.linkedin.com/in/dineshtimilsena0" class="btn btn--ghost" data-link="linkedin"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            </div>
+            <p class="contact__sig">Data <i>→</i> Intelligence <i>→</i> Impact</p>
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Name</label>
+              <input id="cName" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cEmail">Email</label>
+              <input id="cEmail" name="email" type="email" autocomplete="email" required placeholder="Your Valid Email" />
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cMsg">Message</label>
+              <textarea id="cMsg" name="message" rows="4" required placeholder="Tell me about your project or role…"></textarea>
+              <p class="field__err" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send Message <svg class="i"><use href="#i-send"/></svg></button>
+            <p class="form__ok" id="formOk" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#home" class="brand" aria-label="Back to top">
+          <span class="brand__mark">DT</span>
+          <span class="brand__text">
+            <span class="brand__name">Dinesh Timilsena</span>
+            <span class="brand__role">Data Engineer | AI/ML Engineer</span>
+          </span>
+        </a>
+        <ol class="footer__sig" aria-label="Data, Intelligence, Impact">
+          <li style="--accent:var(--cyan)">Data</li>
+          <li style="--accent:var(--violet)">Intelligence</li>
+          <li style="--accent:var(--magenta)">Impact</li>
+        </ol>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="https://github.com/dineshtimilsena0" data-link="github"><svg class="i"><use href="#i-github"/></svg>GitHub</a>
+          <a href="https://www.linkedin.com/in/dineshtimilsena0" data-link="linkedin"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a href="mailto:dineshtimilsena53@gmail.com" data-link="email"><svg class="i"><use href="#i-mail"/></svg>Email</a>
+          <a href="public/assets/resume/resu_me.pdf.html" data-link="resume"><svg class="i"><use href="#i-download"/></svg>Resume</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2026 Dinesh Timilsena. Built with curiosity, data &amp; AI.</p>
+    </div>
+  </footer>
+
+  <!-- ============================== PROJECT MODAL ============================== -->
+  <dialog class="modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal__inner">
+      <button class="modal__close" id="modalClose" aria-label="Close project details"><svg class="i"><use href="#i-x"/></svg></button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

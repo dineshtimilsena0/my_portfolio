@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Dinesh Timilsena </title> <!-- Data Engineer | AI/ML Engineer -->
+  
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eeeeee;
+      color: #222;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .resume {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      padding: 11mm 13mm;
+      background: #fff;
+    }
+
+    /* ================= HEADER ================= */
+
+    .header {
+      text-align: center;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 1.2px;
+      font-weight: bold;
+    }
+
+    .title {
+      margin-top: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .location {
+      margin-top: 3px;
+      font-size: 11.5px;
+    }
+
+    .contact {
+      margin-top: 7px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 10.5px;
+    }
+
+    .contact a {
+      color: #222;
+      text-decoration: none;
+    }
+    .contact {
+      display : flex;
+      gap : 50px;
+    }
+    .contact a {
+      display: flex;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .contact a:hover{
+      color: #4500b5; /* Change to your desired hover color */
+    }
+    /* ================= SUMMARY ================= */
+
+    .summary {
+      margin: 13px 0 11px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    /* ================= SECTION ================= */
+
+    .section {
+      margin-top: 9px;
+    }
+
+    .section-title {
+      margin: 0 0 7px;
+      padding-bottom: 3px;
+      border-bottom: 1.2px solid #222;
+
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+    }
+
+    /* ================= EDUCATION ================= */
+
+    .education-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 15px;
+      margin-bottom: 7px;
+    }
+
+    .institution {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .degree {
+      margin-top: 2px;
+      font-size: 11px;
+      font-style: italic;
+    }
+
+    .date-location {
+      text-align: right;
+      font-size: 10.5px;
+      line-height: 1.4;
+    }
+
+    /* ================= COURSEWORK ================= */
+
+    .coursework {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px 15px;
+      font-size: 10.8px;
+    }
+
+    .coursework div::before {
+      content: "• ";
+    }
+
+    /* ================= PROJECTS ================= */
+
+    .project {
+      margin-bottom: 9px;
+    }
+
+    .project-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 12.5px;
+      font-weight: bold;
+    }
+
+    .project-tech {
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .project-year {
+      font-size: 10.5px;
+      font-weight: bold;
+    }
+
+    .project ul {
+      margin: 3px 0 0 19px;
+      padding: 0;
+      font-size: 10.6px;
+      line-height: 1.32;
+    }
+
+    .project li {
+      margin-bottom: 2px;
+    }
+
+    /* ================= SKILLS ================= */
+
+    .skills {
+      font-size: 10.8px;
+      line-height: 2.1;
+    }
+
+    .skills strong {
+      font-weight: bold;
+    }
+
+    /* ================= PLATFORMS ================= */
+
+    .platforms,
+    .certifications {
+      margin: 0;
+      padding-left: 19px;
+      font-size: 10.8px;
+      line-height: 1.4;
+    }
+
+    /* ================= PRINT ================= */
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .resume {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 25px;
+      }
+
+      .coursework {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="resume">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+      <h1 class="name">DINESH TIMILSENA</h1>
+
+      <div class="title">
+      DATA ENGINEER | AI/ML ENGINEER
+    </div>
+
+      <!--- <div class="location">
+      Nepal
+    </div>-->
+
+      <div class="contact">
+      
+        <a href="mailto:timilsenadinesh10@gmail.com" aria-label="Email">
+          ✉ dineshtimilsena53@gmail.com 
+        </a>
+        <a href="tel:+977-9763756518" aria-label="Phone">
+          ☎ +977-9763756518
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/dineshtimilsena0/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+             LinkedIn  
+        </a>
+
+        <a href="https://github.com/dineshtimilsena0/" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+            GitHub    
+        </a>
+         <a href="#" target="_blank" aria-label="Portfolio">
+          <i class="fab fa-portfolio"></i>
+            ●Portfolio  
+        </a>
+      </div>
+
+    </header>
+
+
+    <!-- ================= SUMMARY ================= -->
+    <section class="section">
+
+      <h2 class="section-title">Summary</h2>
+    </section>
+    <p class="summary">
+         CSIT student at Tribhuvan University, targeting AI/ML Engineer and Data Engineer roles.
+Proficient in Python, machine learning, deep learning, and data collection, cleaning,analysis,visualization and interpretation with a strong problem-solving.
+Built end-to-end ML projects, from data cleaning and model training to deployment as AI-powered applications.
+Passionate about turning data and algorithms into scalable, real-world solutions.
+    </p>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-item">
+
+        <div>
+
+          <div class="institution">
+            Tribhuvan University
+          </div>
+
+          <div class="degree">
+            Bachelor's Degree in Computer Science and Information Technology: CGPA=
+            <!-- Replace with your actual degree -->
+          </div>
+
+        </div>
+
+        <div class="date-location">
+          <strong>2082 - present</strong><br>
+          Nepal
+        </div>
+
+      </div>
+
+
+      <div class="education-item">
+
+        <div>
+
+          <div class="institution">
+            Bal Vidhya Secondary School kohalpur-6,Banke
+          </div>
+
+          <div class="degree">
+            Science / Computer Science:GPA=3.28/4
+          </div>
+        </div>
+
+        <div class="date-location">
+          <strong>2079 - 2080</strong><br>
+          Nepal
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= COURSEWORK ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Relevant Coursework</h2>
+
+      <div class="coursework">
+
+
+        <div>Database Management Systems</div>
+        <div>Machine Learning</div>
+        <div>Deep Learning</div>
+
+        <div>Artificial Intelligence</div>
+        <div>Statistics & Probability</div>
+        <div>Computer Networks</div>
+        <div>Operating Systems</div>
+
+        <div>Data Mining</div>
+        <div>Cloud Computing</div>
+        <div>Distributed Systems</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Projects</h2>
+
+
+      <!-- PROJECT 1 -->
+
+      <div class="project">
+
+        <div class="project-heading">
+
+          <div>
+            End-to-End Data Pipeline
+            <span class="project-tech">
+              | Python, SQL, Pandas, PostgreSQL
+            </span>
+          </div>
+
+          <div class="project-year">
+            2026
+          </div>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Built an end-to-end ETL pipeline to extract, clean, transform,
+            and load structured data into a relational database.
+          </li>
+
+          <li>
+            Used Python and Pandas for data processing and SQL for
+            transformation, querying, and analytical workloads.
+          </li>
+
+          <li>
+            Designed reusable data-processing workflows with validation
+            and error-handling steps to improve data quality.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- PROJECT 2 -->
+
+      <div class="project">
+
+        <div class="project-heading">
+
+          <div>
+            Machine Learning Prediction System
+            <span class="project-tech">
+              | Python, Scikit-learn, Pandas, NumPy
+            </span>
+          </div>
+
+          <div class="project-year">
+            2026
+          </div>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Developed a machine learning pipeline covering data
+            preprocessing, exploratory data analysis, feature engineering,
+            model training, and evaluation.
+          </li>
+
+          <li>
+            Compared multiple machine learning algorithms using appropriate
+            evaluation metrics and cross-validation techniques.
+          </li>
+
+          <li>
+            Created a reusable prediction workflow capable of processing
+            new input data and generating model predictions.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- PROJECT 3 -->
+
+      <div class="project">
+
+        <div class="project-heading">
+
+          <div>
+            AI / Data Analytics Dashboard
+            <span class="project-tech">
+              | Python, SQL, Streamlit
+            </span>
+          </div>
+
+          <div class="project-year">
+            2026
+          </div>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Developed an interactive dashboard for exploring datasets,
+            analyzing trends, and presenting data-driven insights.
+          </li>
+
+          <li>
+            Integrated data preprocessing and analytical workflows into
+            a user-friendly application.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills">
+
+        <strong>Programming:</strong>
+        Python, SQL
+
+        <br>
+
+        <strong>Data Engineering:</strong>
+        ETL/ELT, Data Pipelines, Data Cleaning, Data Processing,
+        Data Warehousing, Apache Spark
+
+        <br>
+
+        <strong>Databases:</strong>
+        PostgreSQL, MySQL, MongoDB
+
+        <br>
+
+        <strong>AI / Machine Learning:</strong>
+        NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch,
+        Feature Engineering, Model Evaluation
+
+        <br>
+
+        <strong>Data Analysis:</strong>
+        Exploratory Data Analysis, Statistics, Data Visualization,
+        Matplotlib, Seaborn
+
+        <br>
+
+        <strong>Tools:</strong>
+        Git, GitHub, Jupyter Notebook, VS Code, Linux
+
+        <br>
+
+        <strong>Cloud:</strong>
+        AWS
+        <!-- Keep only the cloud platforms you actually know -->
+
+      </div>
+      <h3 class="section-title">Soft Skills</h3>
+      <div class="skills">
+        Communication ,Public speaking , Team work,Leadership
+      </div>
+    </section>
+
+
+    <!-- ================= CODING PLATFORMS ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Coding & Technical Profiles</h2>
+
+      <ul class="platforms">
+
+        <li>
+          GitHub —
+          <strong><a href="https://github.com/dineshtimilsena0/">
+              dineshtimilsena0
+            </a></strong>
+        </li>
+
+
+
+        <li>
+          Kaggle —
+          <strong><a href="https://www.kaggle.com/dineshtimilsena">
+              dineshtimilsena
+            </a></strong>
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section class="section">
+
+      <h2 class="section-title">Certifications</h2>
+
+      <ul class="certifications">
+
+        <li>
+          Data Engineer/ AIML Certification —
+          <strong>Apna Collage</strong>
+        </li>
+
+        <li>
+          Python
+          <strong>freecodecamp</strong>
+        </li>
+
+        <li>
+          Git/Github
+          <strong>Code IT</strong>
+        </li>
+
+      </ul>
+
+    </section>
+
+
+  </div>
+
+</body>
+
+</html>
