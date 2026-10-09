@@ -41,3 +41,7 @@ Placeholders appear on the page in **amber dashed boxes** like `[YOUR PHOTO]`.
 - Respects `prefers-reduced-motion`.
 - Keyboard accessible: skip link, focus states, native `<dialog>` for the project modal.
 - The LLM visualization is a deterministic **simulation** for teaching purposes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
