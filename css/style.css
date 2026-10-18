@@ -226,7 +226,8 @@ dl, dd { margin: 0; }
 .brand__mark { position: relative; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px;
   font-family: var(--f-display); font-weight: 700; font-size: 1rem; letter-spacing: -.02em; background: var(--bg-1); }
 .brand__mark::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.5px; background: var(--grad);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; z-index: 1; }
+.brand__avatar { width: 100%; height: 100%; border-radius: inherit; object-fit: cover; display: block; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.2; }
 .brand__name { font-family: var(--f-display); font-weight: 600; font-size: .98rem; }
 .brand__role { font-size: .72rem; color: var(--text-mute); }
@@ -359,7 +360,7 @@ dl, dd { margin: 0; }
 .core { grid-column: 2; grid-row: 1 / span 3; align-self: center; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .core__orb { position: relative; display: grid; place-items: center; width: 150px; height: 150px; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, #1d2c63, #071233 70%); box-shadow: 0 0 60px -10px rgba(59,130,246,.6), inset 0 0 30px rgba(139,92,246,.3); }
-.core__mark { font-family: var(--f-display); font-size: 2.2rem; font-weight: 700; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.core__mark { width: 78%; height: 78%; border-radius: 50%; object-fit: cover; }
 .core__ring { position: absolute; border-radius: 50%; border: 1px solid rgba(148,163,255,.2); }
 .core__ring--1 { inset: -14px; border-top-color: var(--cyan); animation: spin 10s linear infinite; }
 .core__ring--2 { inset: -30px; border-style: dashed; border-color: rgba(139,92,246,.25); animation: spin 30s linear infinite reverse; }
